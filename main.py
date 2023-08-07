@@ -9,7 +9,7 @@ async def root():
 
 @app.get("/news")
 async def get_news():
-    response = requests.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY')
+    response = requests.get('https://newsapi.org/v2/everything?q=mercado+imobiliario&apiKey=60091c54ad7643aa9663e0505e724c31')
     return response.json()
 
 
