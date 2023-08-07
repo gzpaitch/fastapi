@@ -13,7 +13,7 @@ async def root():
 
 @app.get("/news")
 async def get_news():
-    response = requests.get('https://newsapi.org/v2/everything?q=mercado+imobiliario&apiKey=60091c54ad7643aa9663e0505e724c31')
+    response = requests.get('https://newsapi.org/v2/everything?q=mercado+imobiliário&from=2023-07-30&to=2023-08-06&language=pt&sortBy=publishedAt&pageSize=40&page=2&apiKey=60091c54ad7643aa9663e0505e724c31')
     return response.json()
 
 @app.get("/top-headlines")
